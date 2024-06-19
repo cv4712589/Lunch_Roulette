@@ -1,0 +1,292 @@
+div {
+    font-size: 20px;
+}
+
+
+
+.demo {
+    background-color: rgba(255, 2, 2, 0);
+}
+
+
+
+
+
+div[id^="reddiv"] {
+
+    width: 350px;
+    height: 415px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../小專用的圖片/沐森麵店_350x415px.png);
+}
+
+div[id^="greendiv"] {
+
+    width: 380px;
+    height: 415px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../小專用的圖片/無為草堂_350x415px.png);
+}
+
+div[id^="bluediv"] {
+
+    width: 380px;
+    height: 415px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../小專用的圖片//無老鍋_350x415px.png);
+}
+
+div[id^="yellowdiv"] {
+
+    width: 380px;
+    height: 415px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../小專用的圖片/醬萊韓式飯捲_350x415px.png)
+}
+
+div[id^="pinkdiv"] {
+
+    width: 380px;
+    height: 415px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../小專用的圖片/沐森麵店_350x415px.png);
+}
+
+div[id^="aquadiv"] {
+    
+    width: 380px;
+    height: 415px;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+}
+
+div[id^="blackdiv"] {
+    position: absolute;
+    left: 20px;
+    z-index: -999;
+    width: 413px;
+    height: 634px;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+    
+
+}
+
+div[id^="whitediv"] {
+    position: absolute;
+    left: 950px;
+    z-index: -999;
+    width: 413px;
+    height: 634px;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小專用的圖片/活動分享2-413x634px.png);
+}
+.aquadiv_p {
+    position: absolute;
+    left: 485px;
+    z-index: -999;
+    width: 413px;
+    height: 634px;
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小專用的圖片/活動分享3-413x634px.png);
+}
+
+.aquadiv_D {
+    position: absolute;
+    top: 525px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小資/1.png);
+}
+
+.aquadiv_E {
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小資/2.png);
+}
+
+.aquadiv_F {
+    position: absolute;
+    top: 1075px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小資/3.png);
+}
+
+.aquadiv_G {
+    position: absolute;
+    top: 1350px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小資/4.png);
+}
+
+.aquadiv_H {
+    
+    position: absolute;
+    top: 1625px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小資/5.png);
+}
+
+.aquadiv_I {
+    position: absolute;
+    top: 1900px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../小資/6.png);
+}
+.aquadiv_J {
+    
+    position: absolute;
+    top: 525px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(../貴/1.png);
+}
+.aquadiv_K {
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-image: url(../貴/2.png);
+}
+.aquadiv_L {
+    position: absolute;
+    top: 1075px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../貴/3.png);
+}
+.aquadiv_M {
+    position: absolute;
+    top: 1350px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../貴/4.png);
+}
+.aquadiv_N {
+    position: absolute;
+    top: 1625px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../貴/5.png);
+}
+.aquadiv_O {
+    position: absolute;
+    top: 1900px;
+    left: 100px;
+    z-index: -999;
+    width: 1228px;
+    height: 347px;
+    display: flex;
+    background-position: center;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-image: url(../貴/6.png);
+}

@@ -1,0 +1,135 @@
+/* .container {
+    text-align: center;
+    margin-top: 50px;
+} */
+
+/* .slot-machine {
+    width: 300px;
+    margin: 0 auto;
+} */
+
+/* .options {
+    border: 1px solid #000;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.option {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;
+ font-family:'Poppins' , sans-serif;
+
+}
+
+/* body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+} */
+
+
+.container2 {
+    position:absolute;
+    width: 510px;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 600px;
+    left: 455px;
+    bottom: 0;
+    right: 0;
+}
+
+.container2 .spinBtn2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    border: 4px solid rgba(0, 0, 0, 0, 75);
+    cursor: pointer;
+    user-select: none;
+}
+
+.container2 .spinBtn2::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -35px; 
+    width: 40px;
+    height: 20px;
+    background: #fff;
+    z-index: -999px;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+
+.container2 .wheel2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #333,
+        0 0 0 15px #fff,
+        0 0 0 18px #111;
+    transition: transform 5s ease-in-out;
+}
+
+.container2 .wheel2 .number {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: bottom right;
+    transform: rotate(calc(30deg * var(--i)));
+    clip-path: polygon(0 0, 42% 0, 100% 100%, 0 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    text-shadow: black 0.1em 0.1em 0.2em
+    
+}
+.container2 .wheel2 .number span {
+    position: relative;
+    transform: rotate(42deg);
+    font-size: 24px;
+    font-weight: 1100;
+    color: #ffffff;
+    
+}

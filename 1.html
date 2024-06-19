@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="./小專CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        
+
+
+        #image {
+            width: 200px;
+            height: 200px;
+            right: 1px;
+            bottom: 10px;
+            background-size: contain;
+            border: none;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            position: fixed;
+            background-color: transparent;
+            background-position: center;
+            background-image: url(./小專用的圖片/tumblr_macxjhcq8u1rfjowdo1_500.gif);
+            animation: mymove 10s infinite;
+        }
+
+        @keyframes mymove {
+            50% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        #dropdown {
+            display: none;
+            position: absolute;
+            background: #fff4f4;
+            border: 3px solid #d8d2d2;
+            width: 150px;
+            padding: 5px;
+            position: fixed;
+            right: 60px;
+            bottom: 150px;
+            border-radius: 10px;
+
+        }
+
+        .fit {
+            width: fit-content;
+            height: fit-content;
+            border: 0px solid rgb(255, 255, 255);
+        }
+
+        ul.no-bullets {
+            list-style-type: none;
+            padding: 0px;
+            margin: auto;
+            width: 250px;
+            height: 125px;
+        }
+
+        .topic {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -999;
+        }
+        .bg img {
+            min-height: 100%;
+            min-width: 1000px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            img.bg {
+                left: 50%;
+                margin-left: -500px;
+            }
+        }
+
+        .res {
+            width: 500px;
+            margin: auto;
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body >
+<img src="./小專用的圖片/tumblr_macxjhcq8u1rfjowdo1_500.gif"  id="image">
+<div id="dropdown">
+    <ul class="no-bullets">
+        <li><b><a href="./1.html" style="text-decoration:none;">首頁</a></b></li>
+        <li><b><a href="./2.html" style="text-decoration:none;">小資族看這邊</a></b></li>
+        <li><b><a href="./3.html" style="text-decoration:none;">吃好料看這邊</a></b></li>
+        <li><b><a href="./4.html" style="text-decoration:none;">幫你想吃啥好</a></b></li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#image").on("click", function () {
+            $("#dropdown").toggle();
+        });
+    });
+
+</script>
+
+<div>
+    <img class="topic" src="./小專用的圖片/甲蝦米.jpg">
+</div>
+
+<br><br><br><br>
+
+<div class="bg">
+    <img src="./小專用的圖片/底圖1_1731x1354px.jpg">
+</div>
+
+
+<div>
+    <img src="./小專用的圖片/熱門餐廳_650x160px.png" class="res">
+</div>
+<br><br>
+
+
+
+<div class="demo" style="display: flex;">
+    <div style="flex: 5;margin: 2.5px; object-fit: cover;" id="reddiv_B"></div>
+    
+    <div style="flex: 5;margin: 2.5px; object-fit: cover;" id="greendiv_B"></div>
+    
+    <div style="flex: 5;margin: 2.5px; object-fit: cover;" id="bluediv_B"></div>
+    
+    <div style="flex: 5;margin: 2.5px; object-fit: cover;" id="yellowdiv_B"></div>
+</div>
+<br>
+<br><br><br><br>
+<div>
+    <img src="./小專用的圖片/近期活動分享_550x125px.png" class="res">
+</div>
+
+<br>
+
+
+<div class="" style="display: flex;">
+    <div style="flex: 4; margin: 20px;" class="aquadiv_p">
+        <a href="https://komeda.com.tw/menu/66">
+            <img src="./小專用的圖片/活動分享1-413x634px.png">
+        </a>
+    </div>
+
+    <div style="flex: 4; margin: 20px;" id="blackdiv_B">
+        <a href="https://www.wulao.com.tw/news_detail.php?Key=180&cID=4">
+            <img src="./小專用的圖片/活動分享2-413x634px.png">
+        </a>
+    </div>
+
+    <div style="flex: 4; margin: 20px;" id="whitediv_B">
+        <a
+            href="https://www.facebook.com/photo.php?fbid=589051513392993&set=pb.100068644480374.-2207520000&type=3&locale=zh_TW">
+            <img src="./小專用的圖片/活動分享3-413x634px.png">
+    </div>
+
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+</body>
+
+</html>

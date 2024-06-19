@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>輪盤抽獎程式</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+<style>
+    
+</style>
+    
+</head>
+<body>
+    <h1>輪盤抽獎程式</h1>
+    <div>
+        <input type="text" id="newOption" placeholder="輸入新選項">
+        <button id="addOption">添加選項</button>
+    </div>
+    <div>
+        <select id="options" size="5">
+        </select>
+        <button id="removeOption">刪除選項</button>
+    </div>
+    <div>
+        <button id="startSpin">開始抽獎</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        // 存储抽奖选项的数组
+        var optionsArray = [];
+
+        // 当添加选项按钮被点击时，将新选项添加到下拉菜单和数组中
+        $("#addOption").click(function() {
+            var newOption = $("#newOption").val();
+            if (newOption.trim() !== "") {
+                optionsArray.push(newOption);
+                updateOptions();
+                $("#newOption").val("");
+            }
+        });
+
+        // 当删除选项按钮被点击时，从下拉菜单和数组中删除选项
+        $("#removeOption").click(function() {
+            var selectedOption = $("#options").val();
+            if (selectedOption) {
+                var index = optionsArray.indexOf(selectedOption);
+                if (index > -1) {
+                    optionsArray.splice(index, 1);
+                }
+                updateOptions();
+            }
+        });
+
+        // 更新下拉菜单中的选项
+        function updateOptions() {
+            $("#options").empty();
+            optionsArray.forEach(function(option) {
+                $("#options").append("<option>" + option + "</option>");
+            });
+        }
+
+        // 当开始抽奖按钮被点击时，开始抽奖
+        $("#startSpin").click(function() {
+            if (optionsArray.length === 0) {
+                $("#result").text("请添加至少一个选项");
+            } else {
+                var randomIndex = Math.floor(Math.random() * optionsArray.length);
+                var winningOption = optionsArray[randomIndex];
+                $("#result").text("抽中的選項是：" + winningOption);
+            }
+        });
+    </script>
+</body>
+</html>

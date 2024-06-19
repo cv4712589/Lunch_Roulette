@@ -1,0 +1,19 @@
+.navBar2 {
+   background-image: url(../小專用的圖片/甲蝦米.jpg);
+}
+
+.navBar2 li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.navBar2 li:hover {
+    color: #ffffff;
+    background-color: aqua;
+}
+
+.navBar2 li a {
+    color: rgb(102, 18, 18);
+    text-align: left;
+    text-decoration: none;
+}
